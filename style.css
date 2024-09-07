@@ -89,7 +89,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 0;
+  padding: 0.75em 0;
 }
 .nav-brand {
   color: var(--text-light);
@@ -136,6 +136,10 @@ body {
 .features-item {
   text-align: center;
 }
+.features-title {
+  font-size: 1.6em;
+  color: var(--text-dark);
+}
 
 .features-item {
   display: flex;
@@ -143,12 +147,55 @@ body {
   align-items: center;
   padding: 1em 2em;
 }
+
 .features-image {
   max-width: 15em;
 
   object-fit: contain;
 }
+.features-description {
+  color: var(--text-dark);
+}
 
+/* quote */
+.quote {
+  background-color: var(--grey);
+  padding: 3em;
+  color: var(--text-dark);
+}
+.quote-text {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+}
+.quote-source {
+  font-weight: 700;
+  font-size: 1.25em;
+  text-align: right;
+}
+/* action */
+.action {
+  background-color: var(--primary);
+  color: white;
+  padding: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.action-title {
+  margin-bottom: 0.25em;
+  font-size: 1.5em;
+}
+.action-description {
+  font-size: 1.15em;
+  margin-bottom: 1em;
+}
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1em 0;
+}
 /* button */
 .button {
   font-size: 1em;
@@ -159,9 +206,15 @@ body {
   border-radius: 0.2em;
   padding: 0.4em 1.5em;
 }
+
 .button.button-primary {
   background-color: var(--primary);
   color: var(--light);
+}
+.button.on-dark {
+  background-color: transparent;
+  color: white;
+  border-color: white;
 }
 /* layout */
 .container {
@@ -177,6 +230,10 @@ body {
   }
   .hero-illustration {
     max-width: 70%;
+  }
+  .quote-source {
+    margin-top: 0.5em;
+    font-size: 1.5em;
   }
 }
 /* 768 breakpoint */
@@ -208,6 +265,25 @@ body {
     width: 100%;
     max-height: 8em;
   }
+  .quote {
+    padding: 3em 6em;
+  }
+  .quote-text {
+    font-size: 2em;
+  }
+  .quote-source {
+    font-size: 2em;
+  }
+  .action-title {
+    font-size: 2em;
+  }
+  .action-description {
+    font-size: 1.25em;
+    margin-bottom: 1.25em;
+  }
+  .button {
+    font-size: 1.25em;
+  }
 }
 /* 1024 breakpoint */
 @media (min-width: 1024px) {
@@ -222,6 +298,15 @@ body {
   }
   .button {
     font-size: 1.5em;
+  }
+  .features-title {
+    font-size: 2em;
+  }
+  .features-description {
+    font-size: 1.5em;
+  }
+  .quote {
+    padding: 3em 12em;
   }
 }
 /* 1280 breakpoint */
